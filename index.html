@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SendME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script
+        type='text/javascript'>document.addEventListener('DOMContentLoaded', function () { window.setTimeout(document.querySelector('svg').classList.add('animated'), 1000); })</script>
+
+</head>
+
+<body>
+    <!-- <div id="WebPage"> -->
+    <header>
+        <div id="logo">
+            <h1><span>Send</span>ME</h1>
+        </div>
+        <div id="nav"></div>
+        <div id="signup-btn"><button id="signbtn">Sign Up</button></div>
+    </header>
+
+    <div id="mainpage">
+        <div id="left-container">
+            <!-- <div id="content-1">
+                <div id="animation">
+                    <lottie-player src="https://lottie.host/579bece1-cda2-47b7-ab8f-4b728a22af6d/ujUByIlDLK.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay
+                        direction="1" mode="normal">
+                    </lottie-player>
+                </div>
+                <div id="left-text-box">
+                    <p id="p1">Secure and Efficient File Transfer Service</p>
+                    <p id="p2">Transfer your files securly over the internet with our reliable service</p>
+                </div>
+            </div>
+
+            <div id="content2">
+                <h1>Encrypted File Transfer</h1>
+                <p>Simply your data sharing needs our cutting-edge <b>Encryption technology</b> that safegaurds your
+                    files and folder during tranfser, Providing unparalleled Security and Convenience.</p>
+                <h4>Enjoy Hassle-Free File Sharing </h4>    
+            </div> -->
+
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">Welcome To Secure File Transfer </span>
+                </span>
+            </h1>
+            <h2>Transfer Files and Folders Securely Over the Internet </h2>
+            <p> Welcome to our secure file transfer service, your trusted solution for safely transferring files and
+                folders over the internet. We prioritize your privacy and data security by using the unique MAC address
+                of the receiver's system to ensure that your files reach the intended recipient and no one else.
+            </p>
+            <h3>So start sharing your files by - <a href="">Login</a> / <a href="">Sign Up</a></h3>
+        </div>
+        <div id="right-container">
+            <div id="login-page">
+                <div id="form-logo"><span>Send</span>ME</div>
+                <h2>Hi, Welcome Back!</h2>
+                <form action="" class="login-form">
+                    <input id="login-form-username" type="text" required="required" placeholder="Username">
+                    <input id="login-form-password" type="password" required="required" placeholder="Password">
+                    <a href="" class="forget-password-link"> Forget password?</a>
+                    <button id="submit-btn">Login </button>
+                    <div id="signuplink">Don't have an account? <a href="" class="signup-link"> Register Now</a>
+                    </div>
+                    <div id="or">OR</div>
+                    <button id="login-through-gmail"><i class="ri-google-fill"></i> Login using Gmail</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="mainpage2">
+        <div id="section1">
+            <h1 id="heading">Transfer Files Securely With Ease</h1>
+            <div id="subtext">
+                <p>Our easy-to-use interface allows you to transfer files or folders securely over the internet. With
+                    high level encryption and fast transfer speeds, your data is protected and delivered quickly.</p>
+            </div>
+        </div>
+
+        <div id="section2">
+            <div id="Box1" class="boxes">
+                <div id="img"><img src="assets/undraw_trendy_interface_re_xsou.svg" alt=""></div>
+                <h2>Easy-To-Use Interface</h2>
+                <p>Our platform feauters an intuitive interface for seamless file transfer.</p>
+            </div>
+            <div id="box2" class="boxes">
+                <div id="img"><img src="assets/undraw_secure_login_pdn4.svg" alt=""></div>
+                <h2>High Level Encryption</h2>
+                <p>We employ advanced encryption techniques to ensure the security of your files</p>
+            </div>
+            <div id="box3" class="boxes">
+                <div id="img"><img src="assets/undraw_my_files_swob.svg" alt=""></div>
+                <h2>Fast Transfer Speed</h2>
+                <p>Experience lightning-fast transfer speeds for efficient file sharing.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="mainpage3">
+        <div id="content1"><img src="assets/Safe-cuate.svg" alt=""></div>
+        <div id="content2">
+            <h1>Encrypted File Transfer</h1>
+            <p>Simply your data sharing needs our cutting-edge <b>Encryption technology</b> that safegaurds your
+                files and folder during tranfser, Providing unparalleled Security and Convenience.</p>
+            <h4>Enjoy Hassle-Free File Sharing </h4>
+        </div>
+    </div>
+
+    <div id="mainpage4">
+        <div id="column1">
+            <h1>Ensuring Secure File Transfer through MAC Address Validation </h1>
+            <p>Our websites utilizes MAC address validation to guarantee secure file transfer over the internet.</p>
+        </div>
+        <div id="column2">
+            <div id="img"><img src="assets/Search engines-bro.svg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="OverlaySheet"></div>
+    <div class="signup-page">
+    </div>
+
+    <footer>© 2024 SendME | Privacy Policy | Terms of Service | Contact Us</footer>
+    <script>
+        var textWrapper = document.querySelector('.ml11 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml11 .line',
+                scaleY: [0, 1],
+                opacity: [0.5, 1],
+                easing: "easeOutExpo",
+                duration: 700
+            })
+            .add({
+                targets: '.ml11 .line',
+                translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+                easing: "easeOutExpo",
+                duration: 700,
+                delay: 100
+            }).add({
+                targets: '.ml11 .letter',
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=775',
+                delay: (el, i) => 34 * (i + 1)
+            }).add({
+                targets: '.ml11',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
