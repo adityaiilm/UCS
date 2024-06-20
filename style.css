@@ -421,7 +421,7 @@ header{
     height: 100vh;
     width: 100%;
     /* background-color: rgba(28, 28, 28, 0.5); */
-    background-color: rgba(100, 93, 93, 0.5);
+    background-color: rgba(26, 23, 23, 0.801);
     position:fixed;
     top: 0%;
     z-index: -1;
@@ -440,6 +440,7 @@ header{
     background:rgb(255, 255, 255);
     border: 2px solid black;
     border-radius: 20px;
+    font-family: "Kanit", sans-serif;
     position: fixed;
     top: 10%;
     left:15%;
@@ -453,12 +454,13 @@ header{
 }
 
 #fbox{
-    height: 10%;
+    height: 15%;
     font-family:  "Nunito", sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
     display: flex;
     color: #002c58;
+    /* border: 2px solid black; */
 }
 
 #fbox #logobox{
@@ -469,6 +471,7 @@ header{
 }
 
 #fbox #cross{
+    color: black;
     width: 5%;
     text-align: center;
     font-size: larger;
@@ -476,10 +479,45 @@ header{
     /* border: 2px solid black; */
 }
 
-#sbox{
-    height: 10%;
+#fbox #cross i:hover{
+    color: red;
 }
 
+#sbox{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* border: 2px solid black; */
+}
+
+#tbox{
+    height: 70%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#tbox .tbx{
+    height: 90%;
+    width: 40%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#tbox .tbx:hover{
+    scale: 1.02;
+    box-shadow: 0 2px 4px black;
+    border: 1px solid black;
+}
+
+#tbox .tbx img{
+    height: 90%;
+}
 
 /* ----- ----- Homeapage Styling ----- ----- */
 
