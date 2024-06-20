@@ -46,7 +46,7 @@ header{
     scale: 1.02;
 }
 
-#logo span, #form-logo span{
+#logo span, #form-logo span, #logobox span{
     color: #23bdff;
 }
 
@@ -435,14 +435,14 @@ header{
 }
 
 .signup-page{
-    height: 90vh;
-    width: 90vw;
+    height: 80vh;
+    width: 70vw;
     background:rgb(255, 255, 255);
     border: 2px solid black;
     border-radius: 20px;
     position: fixed;
-    top: 5%;
-    left:5%;
+    top: 10%;
+    left:15%;
     z-index: 3;
     transition: 0.5s ease-in-out;
     display: none;   
@@ -451,6 +451,35 @@ header{
 .showsignup-page{
     display: block;
 }
+
+#fbox{
+    height: 10%;
+    font-family:  "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: flex;
+    color: #002c58;
+}
+
+#fbox #logobox{
+    width: 95%;
+    text-align: center;
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+
+#fbox #cross{
+    width: 5%;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    /* border: 2px solid black; */
+}
+
+#sbox{
+    height: 10%;
+}
+
 
 /* ----- ----- Homeapage Styling ----- ----- */
 
@@ -634,6 +663,7 @@ ul hr{
     display: flex;
     justify-content: center;
     /* align-items: center; */
+    border:2px solid black;
 }
 
 #box1{
@@ -642,6 +672,7 @@ ul hr{
     margin-top: 10px;
     display: flex;
     align-items: center;
+    border:2px solid black;
 }
 
 #box1 button{
