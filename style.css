@@ -28,6 +28,7 @@ header{
     justify-content: space-around;
     align-items: center;
     z-index: 1;
+    /* position: fixed; */
 }
 
 #logo:hover{
@@ -647,131 +648,98 @@ ul hr{
     font-family:  "Nunito", sans-serif;
     /* border: 2px solid white; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items:center;
     position: relative;
 }
 
-#textBody{
-    height: 60%;
-    width: 90%;
-    font-size: 7vh;
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+/* ------ file uploader styling ------ */
+
+#file-uploader{
+    height: 90%;
+    width: 30%;
+    background: lavender;
+    border-radius: 15px ;
+    box-shadow: rgba(0, 0, 0) 0px 5px 15px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+
+#file-uploader h1{
+    color: ;
+}
+
+#upload-file{
+    height: 70%;
+    width: 95%;
+    border: 2px dashed #002c58;
+    border-radius:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#drag-and-drop-area{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid white; */
 }
 
-#textBody span{
-    font-weight: 800;
+#drag-and-drop-area #icon{
+    font-size: 8vw;
+    color: #002c58;
 }
 
-#textBody p{
-    margin: 1em 10em;
-    font-size: 0.5em;
+#drag-and-drop-area h2{
+    color: #002c58;
 }
 
-#buttonBox{
-    height: 50%;
-    width: 90%;
-    /* border: 2px solid white; */
-}
-
-#btn{
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid white; */
-}
-
-.Mainbtn{
-    height: 50%;
-    width: 20%;
-    color: white;
-    border:none;
-    border-radius: 15px;
-    margin: 15px;
-    font-size: 20px;
-}
-
-#sendbtn{
-    background-color: #1F663A;
-   
-}
-
-#sendbtn:hover{
-    background-color: #549446;
-    scale: 1.05;
-    font-size:22px ;
-}
-
-#receivebtn{
-    background-color: #AA0000;
-}
-
-#receivebtn:hover{
-    background-color: #E32636;
-    scale: 1.05;
-    font-size:22px ;
-}
-
-
-/* -----            sendfile page styling            ----- */
-
-#uploader{
-    height: 88vh;
-    width: 100%;
-    background-color: #002c58;
+#add-button{
+    height: 15%;
+    width: 95%;
+    /* margin-top: 1vh; */
+    background:#002c58;
+    border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
-#file-upload{
-    height: 70%;
-    width: 25%;
-    margin-left: 80px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 1px 1px 15px 1px;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    border:2px solid black;
-}
-
-#box1{
-    height: 20%;
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    border:2px solid black;
-}
-
-#box1 button{
-    height:50px;
-    width: 50px;
-    background-color: #23bdff   ;
-    border-radius: 50%;
-}
-
-#box1 button i {
-    font-size: 2rem;
-    color: white;
-}
-
-#file-upload-info{
+#add-button button{
     height: 50%;
-    width: 60%;
-    /* border: 2px solid black; */
+    width: 25%;
+    outline: none;
+    background-color: green;
+    color: lavender;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    font-weight:700 ;
+    cursor: pointer;
 }
+
+#add-button button i{
+    font-size:
+}
+
+#add-button button:hover{
+    scale: 1.02;
+    background-color: rgb(9, 173, 9);
+    border: 2px solid rgb(9, 173, 9);
+}
+
+#side-box{
+    height: 80%;
+    width: 55%;
+    /* background: lavender; */
+}
+
 
 /*  -----------   switch button  ------------- */
 
@@ -779,7 +747,10 @@ ul hr{
     height: 9%;
     width: 22vw;
     background-color: lavender;
+    border: 2px solid #222;
     border-radius: 30px;
+    box-shadow: 1px 1px 5px  #000;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
     position: fixed;
     display: flex;
     z-index: 2;
@@ -797,6 +768,8 @@ ul hr{
     border-radius: 50px;
     cursor: pointer;
     text-align: center;
+    font-size: 1rem;
+    font-family: "Kanit", sans-serif;
 }
 
 #switch{
@@ -805,14 +778,11 @@ ul hr{
     left: 0%;
     top:0%;
     position: absolute;
-    background-color: grey;
+    background-color: #266eb6;
     border-radius: 50px;
     transition: 0.5s;
+    
 }
-
-
-
-
 
 /*  -----------   Footer Styling ------------- */
 
@@ -822,8 +792,47 @@ footer{
     background: #001b35;
     color: white;
     font-family: 'Courier New', Courier, monospace;
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     
+}
+
+/* -----          loader page          ------  */
+
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: #051424;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    transition: all linear 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1{
+    font-size: 6vw;
+    font-family:  "Nunito", sans-serif;
+    color: white;
+    opacity: 0;
+    animation: loading 2s linear ;
+    animation-delay: 1s;
+}
+
+@keyframes loading {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }

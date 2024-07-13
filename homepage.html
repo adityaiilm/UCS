@@ -41,25 +41,20 @@
         <button class="switch-btns" onclick="rightClick()">Receive</button>
     </div>
     <div id="main-container">
-        <!-- <div id="textBody">
-            <div id="section0">
-                Send your files through our digital Postman - <span id="element"></span>
+        <div id="file-uploader">
+            <div id="upload-file">
+                <div id="drag-and-drop-area">
+                    <div id="icon"><i class="ri-upload-cloud-2-fill"></i></div>
+                    <h2>Drag and Drop to Upload File</h2>
+                </div>
             </div>
-            <p> 
-                Experience seamless and secure file sharing by utilising the recipent's MAC address. Our intuitive
-                platform allows you to send important files or folders safely
-            </p> 
-        </div> -->
-
-
-        <!-- <div id="buttonBox">
-            <hr>
-            <div id="btn">
-                <button class="Mainbtn" id="sendbtn"><i class="ri-upload-2-line"></i> Send File</button>
-                <button class="Mainbtn" id="receivebtn"><i class="ri-download-2-fill"></i> Receive File</button>
+            <h1>or</h1>
+            <div id="add-button">
+                <h2>Select a File or Folder</h2>
+                <button onclick="importData()"><i class="ri-add-fill"></i> Add</button>
             </div>
-        </div> -->
-
+        </div>
+        <div id="side-box"></div>
     </div>
 
     <div id="mainpage2">
@@ -118,6 +113,10 @@
             strings: ['Faster', 'Securely', 'Effciently'],
             typeSpeed: 80,
         });
+    </script>
+    <script>
+        
+   
     </script>
     <script src="script.js"></script>
 </body>
